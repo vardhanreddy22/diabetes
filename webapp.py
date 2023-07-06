@@ -72,11 +72,11 @@ def diabetes_prediction(input_data):
         return {'Prediction': 'The person is diabetic', 'Information': information}
 
 def diabetes_classification():
-    st.write("Enter 0 if Ans is No Else 1")
+    st.write("Enter 0 if Ans is No, 1 if yes")
 
     # getting the input data from the user
     Age = st.text_input('Age')
-    Gender = st.text_input('Gender: Enter 0 if Male Else 1')
+    Gender = st.text_input('Gender: Enter 0 if Male, 1 if female')
     complications = st.text_input('complications: Enter 1 if you have any of these [Hypertension, Neuropathy, Nephropathy, Diabetic ulcer , Chronic Kidney Disease] ')
     smoked = st.text_input('Smoked')
     work_moderate_activity = st.text_input('Work Moderate Activity (Brisk Walking, Carrying load)')
